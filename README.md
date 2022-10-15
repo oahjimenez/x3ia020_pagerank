@@ -6,7 +6,7 @@ Gestion des données distribuées à large échelle
 PageRank - Pig vs PySpark comparison. Consigne: https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
 
 [1. Introduction - Description de l'expérience](#1-introduction---description-de-lexpérience)  
-[2. Comparaisons d'exécutions](#2-comparaisons-dexécutions)  
+[2. Exécutions pagerank - Pig vs PySpark](#22-exécutions-pagerank---pig-vs-pyspark)  
 [3. Meilleur pagerank](#3-meilleur-pagerank)  
 [4. Conclusions et recommendations](#4-conclusions-et-recommendations)
 
