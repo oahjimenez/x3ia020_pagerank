@@ -1,6 +1,6 @@
 # X3IA020 ALMA - Expérience PageRank Performance
-### Gestion des données distribuées à large échelle
-Faculté des Sciences et des Techniques - Nantes Université
+### Faculté des Sciences et des Techniques - Nantes Université  
+Gestion des données distribuées à large échelle
 **Professeur**: MOLLI Pascal  
 **Étudiants**: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
 PageRank - Pig vs PySpark comparison. Consigne: https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
