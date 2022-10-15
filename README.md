@@ -149,18 +149,18 @@ Temps d’exécution:
 
 # Meilleur pagerank
 On présente les url ayant les meilleur pagerank issue de 3 itérations.
-| Url  | Pagerank |
-| ------------- | ------------- |
-| http://dbpedia.org/resource/Living_people :1st_place_medal: | 36794.33146754463  |
-| http://dbpedia.org/resource/United_States :2nd_place_medal:  | 13201.340151981207  |
-| http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census :3rd_place_medal: | 10371.162005541351  |
-| http://dbpedia.org/resource/List_of_sovereign_states  | 5195.34736186218  |
-| http://dbpedia.org/resource/United_Kingdom  | 4923.82130931521  |
-| http://dbpedia.org/resource/Year_of_birth_missing_%28living_people%29  | 4615.7939763369795  |
-| http://dbpedia.org/resource/France  | 4595.730518177778  |
-| http://dbpedia.org/resource/Germany  | 4111.195621667528  |
-| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
-| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
+| Rank | Url  | Pagerank |
+| ------------- | ------------- | ------------- |
+|1| http://dbpedia.org/resource/Living_people :1st_place_medal: | 36794.33146754463  |
+|2| http://dbpedia.org/resource/United_States :2nd_place_medal:  | 13201.340151981207  |
+|3| http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census :3rd_place_medal: | 10371.162005541351  |
+|4| http://dbpedia.org/resource/List_of_sovereign_states  | 5195.34736186218  |
+|5| http://dbpedia.org/resource/United_Kingdom  | 4923.82130931521  |
+|6| http://dbpedia.org/resource/Year_of_birth_missing_%28living_people%29  | 4615.7939763369795  |
+|7| http://dbpedia.org/resource/France  | 4595.730518177778  |
+|8| http://dbpedia.org/resource/Germany  | 4111.195621667528  |
+|9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
+|10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
 # Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
