@@ -24,6 +24,8 @@ Afin de messurer la performance d'execution entre les implementations Pig et Pys
 * **La région**: europe-west1, défini en function de la proximité avec le bucket hebergéant les données d'entrée
 * **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
 * **Version pyspark installé dans le cluster**: 
+
+Implementations du pagerank utilisées:
 * Implementation Pig (copyright pascal) 
 * Implementation PySpark (copyright pascal) 
 * Implementation PySpark partition controle 
