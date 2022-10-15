@@ -4,6 +4,11 @@ Profeseur: MOLLI Pascal
 Étudiants: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
 
+1. Introduction - Description de l'expérience
+2. Comparaisons d'exécutions
+3. Meilleur pagerank
+4. Conclusions et recommendations
+5. 
 # 1. Introduction - Description de l'expérience
 * Objetif: comparer les performance d'execution de l'algorithme pagerank, entre une implantation Pig et une implantation PySpark, 
 inspire de l'experience fait lors de la conference NDSI 2012.
