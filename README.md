@@ -17,7 +17,7 @@ Le but de cette expérience c'est de comparer les performances de l'algorithme [
 * on présente également le résultat obtenu de l'experience, notamment les url ayant les meilleur page rank
 * On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
 
-
+## 1.1 Configurations utilisées
 * Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours a la suite Google cloud.
 * On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
 * les clusters on ete crée en utilisant la meme région que les donnes pour beneficier des locations plus proches (réduire le temps de transfer réseau)
