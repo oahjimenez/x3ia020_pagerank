@@ -8,6 +8,7 @@ inspire de l'experience fait lors de la conference NDSI 2012.
 * Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours a la suite Google cloud.
 * On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
 * On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
+* Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
 
 Version PIG utilisé:
 Version pyspark utilisé: 
@@ -135,6 +136,9 @@ Exécution 1 (Personne qui exécute: - )
 Temps d’exécution:
 
 * Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner.  
+
+# Meilleur pagerank
+On présente les url ayant les meilleur pagerank issue de 3 itérations.
 
 
 # Conclusions
