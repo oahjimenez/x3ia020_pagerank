@@ -10,8 +10,10 @@ inspire de l'experience fait lors de la conference NDSI 2012.
 * on présente également le résultat obtenu de l'experience, notamment les url ayant les meilleur page rank 
 * Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours a la suite Google cloud.
 * On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
+* les clusters on ete crée en utilisant la meme région que les donnes pour beneficier des locations plus proches (réduire le temps de transfer réseau)
 * On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
 * Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
+
 
 Version PIG utilisé: Apache Pig version 0.18.0-SNAPSHOT
 liens ver implementation PIG (avec des credit et reference au code Pascal)
