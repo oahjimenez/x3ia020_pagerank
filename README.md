@@ -1,4 +1,4 @@
-# x3ia020_pagerank
+# x3ia020 PageRank
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1511791
 
 # Description Expérience
@@ -11,7 +11,11 @@ inspire de l'experience fait lors de la conference NDSI 2012.
 * Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
 
 Version PIG utilisé:
+liens ver implementation PIG (avec des credit et reference au code Pascal)
 Version pyspark utilisé: 
+liens ver implementation Pyspark (avec des credit et reference au code Pascal)
+liens ver implementation Pyspark partition (avec des credit et reference au code Pascal)
+
 
 # Comparaisons d'exécutions
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
