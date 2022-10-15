@@ -1,6 +1,15 @@
 # x3ia020_pagerank
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1511791
 
+# Description Expérience
+
+# Stratégie de exécution
+
+Version PIG utilisé
+Version pyspark utilisé
+
+# Comparaisons d'exécutions
+
 ## PIG
 Configuration 1: 
 Noeuds: 2
@@ -121,4 +130,6 @@ Elapsed time: 43 min 30 sec
 
 Exécution 1 (Personne qui exécute: - )
 Temps d’exécution:
+
+# Conclusions
 
