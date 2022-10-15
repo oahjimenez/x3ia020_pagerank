@@ -3,7 +3,7 @@
 Gestion des données distribuées à large échelle  
 **Professeur**: MOLLI Pascal  
 **Étudiants**: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
-PageRank - Pig vs PySpark comparison. Consigne: https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
+PageRank - comparaison Pig vs PySpark. Consigne: https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
 
 [1. Introduction - Description de l'expérience](#1-introduction---description-de-lexpérience)  
 [2. Exécutions pagerank - Pig vs PySpark](#2-exécutions-pagerank---pig-vs-pyspark)  
