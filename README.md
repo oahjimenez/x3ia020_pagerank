@@ -1,7 +1,7 @@
 # X3IA020 ALMA - Expérience PageRank Performance
 ### Gestion des données distribuées à large échelle
-Profeseur: MOLLI Pascal  
-Étudiants: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo 
+Profeseur: MOLLI Pascal. 
+Étudiants: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
 
 # Description Expérience
