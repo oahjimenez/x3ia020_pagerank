@@ -18,19 +18,17 @@ On compare les temps d'exécutions du pagerank avec des diagrammes dans la [sect
 Ci-apres on enumére les configurations et considérations tenus en compte lors des exécutions Pig et PySpark.
 
 ## 1.1 Configurations utilisées
-Afin de messurer la performance d'execution entre les implementations Pig et Pyspark, nous avons eu recours au service d'exécution de taches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les configurations utilisés pour réaliser cette expérience sont:
-On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
-* les clusters on ete crée en utilisant la meme région que les donnes pour beneficier des locations plus proches (réduire le temps de transfer réseau)
-* Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
+Afin de messurer la performance d'execution entre les implementations Pig et Pyspark, nous avons eu recours au service d'exécution de taches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les considerations et configurations utilisés pour réaliser cette expérience ce résument ci-après:
+* Nombre d'iterations pagerank utilise fixe a 3 pour les deux implementations. Facteurs utilise: d = 0.85
+* Nombres de workers utilises: 2,3,4 (5?)
+* La région a ete defini en function de la proximite avec les donnes, afin de pour beneficier des locations et minimiser le temps de transfer réseau des donnees
+* Version PIG utilisé: Apache Pig version 0.18.0-SNAPSHOT
+* Version pyspark utilisé: 
+* Implementation Pig (copyright pascal) 
+* Implementation PySpark (copyright pascal) 
+* Implementation PySpark partition controle 
 
-
-Version PIG utilisé: Apache Pig version 0.18.0-SNAPSHOT
-liens ver implementation PIG (avec des credit et reference au code Pascal)
-Version pyspark utilisé: 
-liens ver implementation Pyspark (avec des credit et reference au code Pascal)
-liens ver implementation Pyspark partition (avec des credit et reference au code Pascal)
-
-
+Les resultats de l'execution avec les configurations cites sont presentes dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
