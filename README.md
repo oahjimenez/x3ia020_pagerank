@@ -15,7 +15,7 @@ Le but de cette expérience c'est de comparer les performances de l'algorithme [
 
 On compare les temps d'exécutions du pagerank avec des diagrammes dans la [section 2]((#2-exécutions-pagerank---pig-vs-pyspark)  ), ensuite les meilleurs pagerank trouvés sont illustrés dans la [section 3]((#3-meilleur-pagerank) ). Des conclusions basées sur ces comparaison et le deroulement de l'experience sont abordés dans la [section 4](#4-conclusions-et-recommendations).
 
-Ci-apres on enumére les configurations et considérations tenus en compte lors des exécutions Pig et pySpark.
+Ci-apres on enumére les configurations et considérations tenus en compte lors des exécutions Pig et PySpark.
 
 ## 1.1 Configurations utilisées
 * Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours a la suite Google cloud.
