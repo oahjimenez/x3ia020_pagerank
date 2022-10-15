@@ -12,13 +12,15 @@ PageRank - Pig vs PySpark comparison. Consigne: https://madoc.univ-nantes.fr/mod
 
 # 1. Introduction - Description de l'expérience
 Le but de cette expérience c'est de comparer les performances de l'algorithme [pagerank](https://fr.wikipedia.org/wiki/PageRank), entre une implantation [Pig](https://en.wikipedia.org/wiki/Pig_Latin#:~:text=Pig%20Latin%20is%20a%20language,to%20create%20such%20a%20suffix.) et une implantation [PySpark](https://spark.apache.org/docs/latest/api/python/). Cette expérience est inspiré d'une expérience realisée lors de la conférence [NDSI 2012 présentation des Resilient Distributed Datasets (RDD)](https://www.youtube.com/watch?v=dXG4yC8ICEI).
-* Objetif: comparer les performance d'execution de l'algorithme pagerank, entre une implantation [Pig](https://en.wikipedia.org/wiki/Pig_Latin) et une implantation PySpark, 
-inspire de l'experience fait lors de la conference NDSI 2012.
-* on présente également le résultat obtenu de l'experience, notamment les url ayant les meilleur page rank 
+
+
+* on présente également le résultat obtenu de l'experience, notamment les url ayant les meilleur page rank
+* On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
+
+
 * Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours a la suite Google cloud.
 * On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
 * les clusters on ete crée en utilisant la meme région que les donnes pour beneficier des locations plus proches (réduire le temps de transfer réseau)
-* On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
 * Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
 
 
