@@ -169,6 +169,8 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 |9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
+Répondre a la question: résultats calculés avec Pig ou pyspark? résultats similaires ou différents?
+
 # 4. Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
 * Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
