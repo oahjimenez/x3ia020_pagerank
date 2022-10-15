@@ -150,7 +150,7 @@ Temps d’exécution:
 # Meilleur pagerank
 On présente les url ayant les meilleur pagerank issue de 3 itérations.
 | Rank | Url  | Pagerank |
-| ------------- | ------------- | ------------- |
+| ---- | ------------- | ------------- |
 |:1st_place_medal:| http://dbpedia.org/resource/Living_people | 36794.33146754463  |
 |:2nd_place_medal:| http://dbpedia.org/resource/United_States | 13201.340151981207  |
 |:3rd_place_medal:| http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census | 10371.162005541351  |
