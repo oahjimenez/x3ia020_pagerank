@@ -11,7 +11,7 @@ PageRank - Pig vs PySpark comparison. Consigne: https://madoc.univ-nantes.fr/mod
 [4. Conclusions et recommendations](#4-conclusions-et-recommendations)
 
 # 1. Introduction - Description de l'expérience
-Le but de cette expérience c'est de comparer les performances de l'algorithme [pagerank](https://fr.wikipedia.org/wiki/PageRank), entre une implantation Pig et une implantation [PySpark](https://spark.apache.org/docs/latest/api/python/). Cette expérience est inspiré d'une expérience realisée lors de la conférence [NDSI 2012 présentation des Resilient Distributed Datasets (RDD)](https://www.youtube.com/watch?v=dXG4yC8ICEI).
+Le but de cette expérience c'est de comparer les performances de l'algorithme [pagerank](https://fr.wikipedia.org/wiki/PageRank), entre une implantation [Pig](https://en.wikipedia.org/wiki/Pig_Latin#:~:text=Pig%20Latin%20is%20a%20language,to%20create%20such%20a%20suffix.) et une implantation [PySpark](https://spark.apache.org/docs/latest/api/python/). Cette expérience est inspiré d'une expérience realisée lors de la conférence [NDSI 2012 présentation des Resilient Distributed Datasets (RDD)](https://www.youtube.com/watch?v=dXG4yC8ICEI).
 * Objetif: comparer les performance d'execution de l'algorithme pagerank, entre une implantation [Pig](https://en.wikipedia.org/wiki/Pig_Latin) et une implantation PySpark, 
 inspire de l'experience fait lors de la conference NDSI 2012.
 * on présente également le résultat obtenu de l'experience, notamment les url ayant les meilleur page rank 
