@@ -153,8 +153,8 @@ On présente les url ayant les meilleur pagerank issue de 3 itérations.
 | ------------- | ------------- |
 | http://dbpedia.org/resource/Living_people :1st_place_medal: | 36794.33146754463  |
 | http://dbpedia.org/resource/United_States :2nd_place_medal:  | 13201.340151981207  |
-| http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census :3rd_place_medal: | 10371.162005541351  |
-| http://dbpedia.org/resource/List_of_sovereign_states  | 5195.34736186218  |
+| :3rd_place_medal: http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census | 10371.162005541351  |
+|   http://dbpedia.org/resource/List_of_sovereign_states  | 5195.34736186218  |
 | http://dbpedia.org/resource/United_Kingdom  | 4923.82130931521  |
 | http://dbpedia.org/resource/Year_of_birth_missing_%28living_people%29  | 4615.7939763369795  |
 | http://dbpedia.org/resource/France  | 4595.730518177778  |
