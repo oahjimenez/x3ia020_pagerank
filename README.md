@@ -1,5 +1,6 @@
-# X3IA020 ALMA - Expérience PageRank Performance
-X3IA020 Gestion des données distribuées à large échelle
+# X3IA020 ALMA Gestion des données distribuées à large échelle
+# Expérience PageRank Performance
+
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335
 
 # Description Expérience
