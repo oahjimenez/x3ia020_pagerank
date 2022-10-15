@@ -1,8 +1,7 @@
 # x3ia020_pagerank
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1511791
 
-
-PIG
+##PIG
 Configuration 1: 
 Noeuds: 2
 Itérations: 3
@@ -39,7 +38,7 @@ Elapsed time:  34 min 34 sec
 
 
 
-PYSPARK BASIC
+##PYSPARK BASIC
 Configuration 1: 
 Noeuds: 2
 Itérations: 3
@@ -79,7 +78,7 @@ Elapsed time: 35 min 28 sec
 
 
 
-PYSPARK PARTITION
+##PYSPARK PARTITION
 Configuration 1: 
 Noeuds: 2
 Itérations: 3
