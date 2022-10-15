@@ -2,13 +2,17 @@
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1511791
 
 # Description Expérience
+* Objetif: comparer les performance d'execution de l'algorithme pagerank, entre une implantation Pig et une implantation PySpark, 
+inspire de l'experience fait lors de la conference NDSI 2012. 
+* Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours a la suite Google cloud.
+* On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
+* On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
 
-# Stratégie de exécution
-
-Version PIG utilisé
-Version pyspark utilisé
+Version PIG utilisé:
+Version pyspark utilisé: 
 
 # Comparaisons d'exécutions
+* On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
 ## PIG
 Configuration 1: 
@@ -126,10 +130,11 @@ Cluster id: cluster-a35a
 Start time: Oct 14, 2022, 10:15:21 AM
 Elapsed time: 43 min 30 sec
 
-
-
 Exécution 1 (Personne qui exécute: - )
 Temps d’exécution:
+
+* Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner.  
+
 
 # Conclusions
 note: faire remarque pour les possibilités de changement de temps d'exécution
