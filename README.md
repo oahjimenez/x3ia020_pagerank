@@ -148,7 +148,7 @@ Temps d’exécution:
 * On appercoit une modeste amelioration par rapport a l'implementation basic pyspark, ce qui suggere qu'une meilleure configuration peut encore etre mis en place pour beneficier du partitionnement controler, ce point et abordé plus en détaille dans la section de conclusions et recommendations.
 
 # Meilleur pagerank
-On présente les url ayant les meilleur pagerank issue de 3 itérations.
+Avec cette expérience nous avons obtenu que On présente les url ayant les meilleur pagerank issue de 3 itérations.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
 |:1st_place_medal:| http://dbpedia.org/resource/Living_people | 36794.33146754463  |
@@ -165,3 +165,6 @@ On présente les url ayant les meilleur pagerank issue de 3 itérations.
 # Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
 * Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
+
+* Défis rencontrés:
+* Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota, discrepence pagerank pig vs pyspark du au perte de précision
