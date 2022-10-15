@@ -18,12 +18,12 @@ On compare les temps d'exécutions du pagerank avec des diagrammes dans la [sect
 Ci-apres on enumére les configurations et considérations tenus en compte lors des exécutions Pig et PySpark.
 
 ## 1.1 Configurations utilisées
-Afin de messurer la performance d'execution entre les implementations Pig et Pyspark, nous avons eu recours au service d'exécution de taches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les considerations et configurations utilisés pour réaliser cette expérience ce résument ci-après:
-* **Nombre d'iterations pagerank**: fixe a 3 pour les deux implementations. Facteurs utilise: d = 0.85
+Afin de messurer la performance d'execution entre les implementations Pig et Pyspark, nous avons eu recours au service d'exécution de taches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les considerations et configurations utilisées pour réaliser cette expérience ce résument ci-après:
+* **Parametres pagerank**: le nombre d'iterations a été fixé à 3, et le facteur pagerank utilisé de {d = 0.85}, pour les deux implementations. 
 * **Nombres de workers**: 2,3,4 (5?)
-* **La région**: a ete defini en function de la proximite avec les donnes, afin de pour beneficier des locations et minimiser le temps de transfer réseau des donnees
-* **Version PIG**: Apache Pig version 0.18.0-SNAPSHOT
-* **Version pyspark**: 
+* **La région**: europe-west1, défini en function de la proximité avec le bucket hebergéant les données d'entrée
+* **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
+* **Version pyspark installé dans le cluster**: 
 * Implementation Pig (copyright pascal) 
 * Implementation PySpark (copyright pascal) 
 * Implementation PySpark partition controle 
