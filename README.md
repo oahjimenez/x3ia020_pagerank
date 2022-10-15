@@ -172,6 +172,8 @@ Avec cette expérience nous avons obtenu que On présente les url ayant les meil
 # 4. Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
 * Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
+* Recommendation exécuter plusieurs fois pour calculer un temps d'exécution moyen.
+* Prendre en compre l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
 
 * Défis rencontrés:
 * Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota, discrepence pagerank pig vs pyspark du au perte de précision
