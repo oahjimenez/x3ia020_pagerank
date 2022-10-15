@@ -18,8 +18,8 @@ On compare les temps d'exécutions du pagerank avec des diagrammes dans la [sect
 Ci-apres on enumére les configurations et considérations tenus en compte lors des exécutions Pig et PySpark.
 
 ## 1.1 Configurations utilisées
-Afin de messurer la performance d'execution entre ces deux implementation, nous avons eu recours au service d'exécution de taches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud.
-* On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
+Afin de messurer la performance d'execution entre les implementations Pig et Pyspark, nous avons eu recours au service d'exécution de taches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les configurations utilisés pour réaliser cette expérience sont:
+On a utilisé des clusters avec plusieurs configuration, notamment en variant le nombre de workers. Nous avons utilisé 2,3,4 (5?) nombre de workers, visant a comparer l'evolution de temp d'executions entre les deux implementations.
 * les clusters on ete crée en utilisant la meme région que les donnes pour beneficier des locations plus proches (réduire le temps de transfer réseau)
 * Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
 
