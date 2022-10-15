@@ -4,7 +4,7 @@ Profeseur: MOLLI Pascal
 Étudiants: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
 PageRank - Pig vs PySpark comparison https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
 
-# Introduction - Description de l'expérience
+# 1. Introduction - Description de l'expérience
 * Objetif: comparer les performance d'execution de l'algorithme pagerank, entre une implantation Pig et une implantation PySpark, 
 inspire de l'experience fait lors de la conference NDSI 2012.
 * on présente également le résultat obtenu de l'experience, notamment les url ayant les meilleur page rank 
@@ -22,7 +22,7 @@ liens ver implementation Pyspark (avec des credit et reference au code Pascal)
 liens ver implementation Pyspark partition (avec des credit et reference au code Pascal)
 
 
-# Comparaisons d'exécutions
+# 2. Comparaisons d'exécutions
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
 ## PIG
@@ -149,7 +149,7 @@ Temps d’exécution:
 * Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner. 
 * On appercoit une modeste amelioration par rapport a l'implementation basic pyspark, ce qui suggere qu'une meilleure configuration peut encore etre mis en place pour beneficier du partitionnement controler, ce point et abordé plus en détaille dans la section de conclusions et recommendations.
 
-# Meilleur pagerank
+# 3. Meilleur pagerank
 Avec cette expérience nous avons obtenu que On présente les url ayant les meilleur pagerank issue de 3 itérations.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
@@ -164,7 +164,7 @@ Avec cette expérience nous avons obtenu que On présente les url ayant les meil
 |9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
-# Conclusions et recommendations
+# 4. Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
 * Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
 
