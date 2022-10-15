@@ -13,7 +13,7 @@ inspire de l'experience fait lors de la conference NDSI 2012.
 * On presente la comparaison avec des diagrammes, et ensuite produit des conclusions basées sur ces comparaison et le deroulement de l'experience
 * Configuration pagerank utilisé: 3 itérations, avec des facteurs 0.15 + 0.85* sum (Brief description algo)
 
-Version PIG utilisé:
+Version PIG utilisé: Apache Pig version 0.18.0-SNAPSHOT
 liens ver implementation PIG (avec des credit et reference au code Pascal)
 Version pyspark utilisé: 
 liens ver implementation Pyspark (avec des credit et reference au code Pascal)
