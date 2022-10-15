@@ -94,6 +94,8 @@ Elapsed time: 35 min 28 sec
 
 
 ## PYSPARK PARTITION
+Afin d'éviter les shuffles entre join, une mise en place des partition controlé a eté rajouté au script pyspark. Le nombre de partition a eté laissé par défaut (Rajouter implementation pyspark), et pour la function de partitionnement un lambda utilisant les meme partition d'url a ete mis en place.
+
 Configuration 1: 
 Noeuds: 2
 Itérations: 3
@@ -135,11 +137,13 @@ Elapsed time: 43 min 30 sec
 Exécution 1 (Personne qui exécute: - )
 Temps d’exécution:
 
-* Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner.  
+* Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner. 
+* On appercoit une modeste amelioration par rapport a l'implementation basic pyspark, ce qui suggere qu'une meilleure configuration peut encore etre mis en place pour beneficier du partitionnement controler, ce point et abordé plus en détaille dans la section de conclusions et recommendations.
 
 # Meilleur pagerank
 On présente les url ayant les meilleur pagerank issue de 3 itérations.
 
 
-# Conclusions
+# Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
+* Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
