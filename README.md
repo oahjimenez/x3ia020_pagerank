@@ -28,7 +28,7 @@ liens ver implementation Pyspark (avec des credit et reference au code Pascal)
 liens ver implementation Pyspark partition (avec des credit et reference au code Pascal)
 
 
-# 2. Comparaisons d'exécutions
+# 2. Exécutions pagerank - Pig vs PySpark
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
 ## PIG
