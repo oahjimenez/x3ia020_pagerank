@@ -22,7 +22,7 @@ Afin de messurer la performance d'exécution entre les implementations Pig et Py
 * **Paramètres pagerank**: le nombre d'iterations a été fixé à 3, et le facteur pagerank utilisé de {d = 0.85}, pour les deux implementations. 
 * **Nombres de workers**: 2,3,4 (5?)
 * **La région**: europe-west1, défini en function de la proximité avec le bucket hebergéant les données d'entrée
-* **Dataset d'entrée**: gs://public_lddm_data//page_links_en.nt.bz2
+* **Dataset d'entrée**: dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), disponibles sur le bucket publique gs://public_lddm_data//page_links_en.nt.bz2
 * **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
 * **Version pyspark installé dans le cluster**: 
 
