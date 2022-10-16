@@ -93,6 +93,7 @@ note: faire remarque pour les possibilités de changement de temps d'exécution
 * Recommendation exécuter plusieurs fois pour calculer un temps d'exécution moyen.
 * Prendre en compre l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
 * Plus facile de faire du benchmarking et modifications (e.g. calcul max) sur l'implémentation pyspark, du au fait que Pig c'est du code integré tandis que PySpark c'est sur python
+* Tester Pig avec des types double, long pour determiner quel type de données minimise la perte de précision
 
 * Défis rencontrés:
 * Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota, discrepence pagerank pig vs pyspark du au perte de précision
