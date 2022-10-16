@@ -36,12 +36,11 @@ Les resultats de l'execution avec les configurations cites sont presentes dans l
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
 ## PIG
-| Nombre de noeuds | Temps d'exécution  | Pagerank |
+| Programme | Nombre de noeuds | Temps d'exécution |
 | ---- | ------------- | ------------- |
-| 2 | x | x |
-| 3 | x | x |
-| 4 | x | x |
-| 5 | x | x |
+| PIG | x | x |
+| PySpark Basic | x | x |
+| PySpark avec Partitionnement | x | x |
 
 Configuration 1: 
 Noeuds: 2
