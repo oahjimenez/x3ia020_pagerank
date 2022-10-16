@@ -85,7 +85,7 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
 Répondre a la question: résultats calculés avec Pig ou pyspark? résultats similaires ou différents?
-Quant a l'implementation Pig, il serait donc recommendé d'utiliser des types long pour éviter les [pertes de précisions] (https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html)
+Quant a l'implementation Pig, il serait donc recommendé d'utiliser des types long pour éviter les [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html)   
 
 # 4. Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécution
