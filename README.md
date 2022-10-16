@@ -68,6 +68,8 @@ Afin d'éviter les shuffles entre join, une mise en place des partition control�
 <img align=center src= https://github.com/oahjimenez/x3ia020_pagerank/blob/main/comp_diag.png>
 <br/>
 
+* Pig est le moins performate avec deux noeuds ce qui est le résultat d'écrire les résutlts intermediaries qui prennent du temps en plus.
+* À partir de l'observation de notre expérience nous constatons qu'en moyen pyspark performe le mieux, ensuite Pig et pyspark ont un moyen de temps d'exécution très proche.
 * Pyspark basic et partionné montre etre plus performant que Pig quand on met pas en place une amélioration externe (augmentation nombre de workeurs)
 * pyspark avec partionnement controlé est plus performant que Pig et que sa version sans partionement, pourtant il arrive a un soeil a un nombre de workeurs donnée, ou il est ratrappé par Pig
 * A partir de 3 noeuds, Pyspark avec partionnement controle est plus performant que Pyspark Basic
