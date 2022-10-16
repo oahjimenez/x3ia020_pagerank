@@ -43,7 +43,7 @@ Les resultats de l'execution avec les configurations cites sont presentes dans l
 | 4 | x | x |
 | 5 | x | x |
 
-## PYSPARK BASIC
+## PySpark Basic
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
 | ------------- | ------------- | ------------- |
 | 2 | x | x |
@@ -51,7 +51,7 @@ Les resultats de l'execution avec les configurations cites sont presentes dans l
 | 4 | x | x |
 | 5 | x | x |
 
-## PYSPARK PARTITION
+## PySpark avec partionnement
 Afin d'éviter les shuffles entre join, une mise en place des partition controlé a eté rajouté au script pyspark. Le nombre de partition a eté laissé par défaut (Rajouter implementation pyspark), et pour la function de partitionnement un lambda utilisant les meme partition d'url a ete mis en place.
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
 | ------------- | ------------- | ------------- |
@@ -59,6 +59,8 @@ Afin d'éviter les shuffles entre join, une mise en place des partition control�
 | 3 | x | x |
 | 4 | x | x |
 | 5 | x | x |
+
+## PIG vs PySpark Basic vs PySpark avec partionnement
 
 * Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner. 
 * On appercoit une modeste amelioration par rapport a l'implementation basic pyspark, ce qui suggere qu'une meilleure configuration peut encore etre mis en place pour beneficier du partitionnement controler, ce point et abordé plus en détaille dans la section de conclusions et recommendations.
