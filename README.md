@@ -67,7 +67,7 @@ Afin d'éviter les shuffles entre join, une mise en place des partition control�
 * Bien préciser si les temps comprend aussi les temps cluster ou seulements les temps d'exec internes du programme
 
 # 3. Meilleur pagerank
-Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
+Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri **<http://dbpedia.org/resource/Living_people>**, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
 |:1st_place_medal:| http://dbpedia.org/resource/Living_people | 36794.33146754463  |
