@@ -38,27 +38,27 @@ Les resultats de l'execution avec les configurations cites sont presentes dans l
 ## PIG
 | Nombre de noeuds | Temps d'exécution  | Dataproc Job id
 | ------------- | ------------- | ------------- |
-| 2 | x | x |
-| 3 | x | x |
-| 4 | x | x |
-| 5 | x | x |
+| 2 | 49 min 52 sec | 83edf25aa5e24364a1ea968a99ab415f |
+| 3 | 37 min 25 sec | 85961f8339bc43bcbaf5cf69cd13719d |
+| 4 | 34 min 34 sec | 6d80276d638d4d0096f0d2bbad55debc |
+| 5 | 29 min 45 sec | 1ad6eaf435d24191878899943ae73a15 |
 
 ## PySpark Basic
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
 | ------------- | ------------- | ------------- |
-| 2 | x | x |
-| 3 | x | x |
-| 4 | x | x |
-| 5 | x | x |
+| 2 | 43 min 30 sec | 895b7b281f794d4393278962e01169ad |
+| 3 | 38 min 23 sec | 527ace71d1ce4f9da1b5f5ab5581c2dd |
+| 4 | 35 min 28 sec | e870244c239b47e1bf2e6c86691d4bfa |
+| 5 | 35 min 04 sec | 9d52c020836c41cba2c50e3da3de29e7 |
 
 ## PySpark avec partionnement
 Afin d'éviter les shuffles entre join, une mise en place des partition controlé a eté rajouté au script pyspark. Le nombre de partition a eté laissé par défaut (Rajouter implementation pyspark), et pour la function de partitionnement un lambda utilisant les meme partition d'url a ete mis en place.
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
 | ------------- | ------------- | ------------- |
-| 2 | x | x |
-| 3 | x | x |
-| 4 | x | x |
-| 5 | x | x |
+| 2 | 42 min 48 sec | 71dd624351af42128d8d321c5fc314dd |
+| 3 | 31 min 41 sec | f0c04b5b485b4504952c75b7e51b3e44 |
+| 4 | 29 min 12 sec | 3f475ada46de4c7ab8e0ca526c1ed5a5 |
+| 5 | 30 min 20 sec | 98c8047900634a33882b2296b8a8293a |
 
 ## PIG vs PySpark Basic vs PySpark avec partionnement
 
@@ -67,7 +67,7 @@ Afin d'éviter les shuffles entre join, une mise en place des partition control�
 * Bien préciser si les temps comprend aussi les temps cluster ou seulements les temps d'exec internes du programme
 
 # 3. Meilleur pagerank
-Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri **<http://dbpedia.org/resource/Living_people>**, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
+Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
 |:1st_place_medal:| http://dbpedia.org/resource/Living_people | 36794.33146754463  |
