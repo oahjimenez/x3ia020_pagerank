@@ -95,7 +95,8 @@ Répondre a la question: résultats calculés avec Pig ou pyspark? résultats si
 Quant a l'implementation Pig, il serait donc recommendé d'utiliser des types long pour éviter les [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html)   
 
 # 4. Conclusions et recommendations
-note: faire remarque pour les possibilités de changement de temps d'exécution
+note: faire remarque pour les possibilités de changement de temps d'exécutio
+* Il faut tenir en compte que les programmers s'executent dans le contexte des cluster google dans des machines suceptibles de prendre plus de temps d'execution de leur disponibilite et utilisation, ce qui peut impacter les temps d'executions
 * Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
 * Recommendation exécuter plusieurs fois pour calculer un temps d'exécution moyen.
 * Prendre en compre l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
