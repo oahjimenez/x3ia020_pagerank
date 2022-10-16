@@ -97,7 +97,7 @@ Quant a l'implementation Pig, il serait donc recommendé d'utiliser des types lo
 # 4. Conclusions et recommendations
 note: faire remarque pour les possibilités de changement de temps d'exécutio
 * Il faut tenir en compte que les programmers s'executent dans le contexte des cluster google dans des machines suceptibles de prendre plus de temps d'execution de leur disponibilite et utilisation, ce qui peut impacter les temps d'executions
-* Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy
+* Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy, compte tenus que dans cette expérience nous avons eu recours au calcul de nombre de partition par defaut de pySpark
 * Recommendation exécuter plusieurs fois pour calculer un temps d'exécution moyen.
 * Prendre en compre l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
 * Plus facile de faire du benchmarking et modifications (e.g. calcul max) sur l'implémentation pyspark, du au fait que Pig c'est du code integré tandis que PySpark c'est sur python
