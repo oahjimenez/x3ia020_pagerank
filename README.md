@@ -36,29 +36,29 @@ Les resultats de l'execution avec les configurations cites sont presentes dans l
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
 ## PIG
-| Nombre de noeuds | Temps d'exécution |
-| ------------- | ------------- |
-| 2 | x |
-| 3 | x |
-| 4 | x |
-| 5 | x |
+| Nombre de noeuds | Temps d'exécution  | Dataproc Job id
+| ------------- | ------------- | ------------- |
+| 2 | x | x |
+| 3 | x | x |
+| 4 | x | x |
+| 5 | x | x |
 
 ## PYSPARK BASIC
-| Nombre de noeuds | Temps d'exécution |
-| ------------- | ------------- |
-| 2 | x |
-| 3 | x |
-| 4 | x |
-| 5 | x |
+| Nombre de noeuds | Temps d'exécution | Dataproc Job id
+| ------------- | ------------- | ------------- |
+| 2 | x | x |
+| 3 | x | x |
+| 4 | x | x |
+| 5 | x | x |
 
 ## PYSPARK PARTITION
 Afin d'éviter les shuffles entre join, une mise en place des partition controlé a eté rajouté au script pyspark. Le nombre de partition a eté laissé par défaut (Rajouter implementation pyspark), et pour la function de partitionnement un lambda utilisant les meme partition d'url a ete mis en place.
-| Nombre de noeuds | Temps d'exécution |
-| ------------- | ------------- |
-| 2 | x |
-| 3 | x |
-| 4 | x |
-| 5 | x |
+| Nombre de noeuds | Temps d'exécution | Dataproc Job id
+| ------------- | ------------- | ------------- |
+| 2 | x | x |
+| 3 | x | x |
+| 4 | x | x |
+| 5 | x | x |
 
 * Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner. 
 * On appercoit une modeste amelioration par rapport a l'implementation basic pyspark, ce qui suggere qu'une meilleure configuration peut encore etre mis en place pour beneficier du partitionnement controler, ce point et abordé plus en détaille dans la section de conclusions et recommendations.
