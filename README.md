@@ -33,7 +33,7 @@ Implementations du pagerank utilisées:
 
 Les résultats de l'exécution avec les configurations citées sont presentés dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
-* On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
+Ci-dessous on présente les résultats issus des exécutions pageranks dans les différentes configurations de cluster. Pour l'implementation pyspark, on distingue le temps d'exécution de l'implémentation sans et avec partitionnement controlé.
 
 ## PIG
 | Nombre de noeuds | Temps d'exécution  | Dataproc Job id
