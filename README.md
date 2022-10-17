@@ -67,9 +67,9 @@ Ci-après suit un diagramme de ligne illustrant la comparaison des temps d'exéc
 <br/>
 Sur ce graphique nous pouvons constater:
 * Pig est l'implémentation la moins performante avec deux noeuds, ce qui pourrait s'expliquer par les écritures des résultats intermediaries sur le disque avec des ressources limitées. 
-* PySpark avec du partitionnement c'est l'implémentation qui performe le mieux en moyen, néanmoins cette implémentation atteind un seuil a un nombre de noeuds 5, ou il est rattrapé par Pig
-* Pig bénéficie plus de l'augmentation dans le nombre de workers, on peut apercevoir cela surtout dans l'increment de nombre de noeuds de 4 à 5, où on voit que pyspark maintient son temps d'exécution tandis que Pig continue à réduire le temps d'exécution
-* Avec des ressources limitées (2 noeuds), Pyspark ne semble pas bénéficier d'une amélioration en raison du partionnement
+* PySpark avec du partitionnement c'est l'implémentation qui performe le mieux en moyen, néanmoins cette implémentation atteind un seuil a un nombre de noeuds 5, ou il est rattrapé par Pig.
+* Pig bénéficie plus de l'augmentation dans le nombre de workers, on peut apercevoir cela surtout dans l'increment de nombre de noeuds de 4 à 5, où on voit que pyspark maintient son temps d'exécution tandis que Pig continue à réduire le temps d'exécution.
+* Avec des ressources limitées (2 noeuds), Pyspark ne semble pas bénéficier d'une amélioration en raison du partionnement.
 * Quant à Pyspark basique, on aperçoit qu'il est plus performant que Pig au début, et ensuite entre 3 et 4 workers il est rattrapé par Pig. À partir d' nombre de workeur donnée, dans ce cas, 5, Pig deviennent plus performants.
 
 
@@ -99,7 +99,7 @@ Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin
 
 * Il y avait des inconvenients par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution. Afin de minimiser cela, une recommendation serait d'exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le crédit ne suffit pas pour faire ce genre d'expérimentations.
 
-* Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota
+* Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota.
 
-* Finalment, nous avons constaté une différence significative de rank des pages entre pyspark et Pig et nous pensons que c'est due à une différence de précision pour les multiplications et divisions qui rendent différent les résultats, afin de vérifier cela nous avons fait une expérimentation avec un petit volume de données et il y avait une différence mais il était bien plus petit qu'avec le grand fichier. Par example, avec un petit fichier on peut obtenir une différence de xxx, tandis que pour les gros dataset la différence déforme jusqu'a 33320.5089 pour le meilleur pagerank calculé avec Pig, contre calculé avec Pyspark http://dbpedia.org/resource/Living_people pour le site. Nous recommendons d'explorer les exécutions des pagerank en utilisant les types de données recommendées pour éviter une [perte de précision pour Pig](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html)
+* Finalment, nous avons constaté une différence significative de rank des pages entre pyspark et Pig et nous pensons que c'est due à une différence de précision pour les multiplications et divisions qui rendent différent les résultats, afin de vérifier cela nous avons fait une expérimentation avec un petit volume de données et il y avait une différence mais il était bien plus petit qu'avec le grand fichier. Par example, avec un petit fichier on peut obtenir une différence de xxx, tandis que pour les gros dataset la différence déforme jusqu'a 33320.5089 pour le meilleur pagerank calculé avec Pig, contre calculé avec Pyspark http://dbpedia.org/resource/Living_people pour le site. Nous recommendons d'explorer les exécutions des pagerank en utilisant les types de données recommendées pour éviter une [perte de précision pour Pig](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html).
 
