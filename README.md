@@ -99,7 +99,7 @@ Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin
 
 * Nous avons utilisé la fonction de [partitionnement qui vient par défaut avec pySpark](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy) (avec le param None) et ça pourrait avoir impacté la performance de la version partitionnée de pySpark, alors qu'il pourrait exister une autre implémentation plus optimale.
 
-* Il y avait des inconvenants par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution. Afin de minimiser cela, une recommendation serait d'exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le crédit ne suffit pas pour faire ce genre d'expérimentations.
+* Il y avait des inconvenients par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution. Afin de minimiser cela, une recommendation serait d'exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le crédit ne suffit pas pour faire ce genre d'expérimentations.
 
 * Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota
 
