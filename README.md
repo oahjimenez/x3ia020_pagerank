@@ -67,8 +67,8 @@ Ci-après suit un diagramme de ligne illustrant la comparaison des temps d'exéc
 <br/>
 Sur ce graphique nous pouvons constater les points suivants:
 * Pig est l'implémentation la moins performante avec deux noeuds, ce qui pourrait s'expliquer par les écritures des résultats intermediaries sur le disque avec des ressources limitées. 
-* PySpark avec du partitionnement c'est l'implémentation qui performe le mieux en moyen, néanmoins cette implémentation atteint un seuil à 4 noeuds, et ensuite est rattrapé par Pig à 5 noeuds.
-* Pig bénéficie plus de l'augmentation dans le nombre de workers, on peut apercevoir cela surtout dans l'increment de nombre de noeuds de 4 à 5, où on voit que les implémentatios sur PySpark atteignent un seuil dans leurs temps d'exécution, tandis que le temps d'exécution continue à diminuer pour Pig.
+* PySpark avec du partitionnement est l'implémentation qui performe le mieux en moyen, néanmoins cette implémentation atteint un seuil à 4 noeuds, et ensuite est rattrapé par Pig à 5 noeuds.
+* Pig bénéficie plus de l'augmentation dans le nombre de workers, on peut apercevoir cela surtout dans l'increment de nombre de noeuds de 4 à 5, où l'on voit que les implémentatios sur PySpark atteignent un seuil dans leurs temps d'exécution, tandis que le temps d'exécution continue à diminuer pour Pig.
 * Avec des ressources limitées (2 noeuds), Pyspark ne semble pas bénéficier d'une amélioration en raison du partionnement.
 
 Les résultats des meilleurs pagerank trouvés sont présentés dans la section suivante.
