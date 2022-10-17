@@ -94,27 +94,13 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémentation Pyspark, étant donné que pour Python les données numériques float ont une [double précision par défaut](https://zetcode.com/python/decimal/#:~:text=By%20default%2C%20Python%20interprets%20any,for%20financial%20and%20monetary%20calculations.) et que pour Pig les types autres que le long peuvent entrainer dans des [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html). Plus de details sur ce point sont abordees dans la section finale.
 
 # 4. Conclusions et recommendations
-Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de faire une version simplifiée de PageRank en utilisant Hadoop Pig et Hadoop Spark sur l'Environnement GCP qui a rendu simple le processus de créer et gérer les clusters parcoure. Concretement, on remarque les points suivants:
+Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de faire une version simplifiée de PageRank en utilisant Hadoop Pig et Hadoop Spark sur l'Environnement GCP qui a rendu simple le processus de créer et gérer les clusters parcoure. On résume les principales conclusions ci-dessous:
 
-* Il y avait des inconvenants par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution, afin de traiter cela, il faut exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le credit ne suffit pas pour faire ce genre d'expérimentations.
+* Il y avait des inconvenants par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution. Afin de minimiser cela, une recommendation serait d'exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le crédit ne suffit pas pour faire ce genre d'expérimentations.
 
-* Nous avons constaté une différence significative de rank des pages entre pyspark et Pig et nous pensons que c'est due à une différence de précision pour les multiplications et divisions qui rendent différent les résultats, afin de vérifier cela nous avons fait une expérimentation avec un petit volume de données et il y avait une différence mais il était bien plus petit qu'avec le grand fichier. Par example, avec un petit fichier on peut obtenir une différence de xxx, tandis que pour les gros dataset la différence déforme jusqu'a 33320.5089 pour le meilleur pagerank calculé avec Pig, contre calculé avec Pyspark http://dbpedia.org/resource/Living_people pour le site
+* Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota
 
 * Nous avons utilisé la fonction de partitionnement qui vient par défaut avec pySpark (avec le param None) et ça pourrait avoir impacté la performance de la version partitionnée de py Spark, alors qu'il pourrait exister une autre implémentation plus optimale.[Lien de doc](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy)
 
+* Nous avons constaté une différence significative de rank des pages entre pyspark et Pig et nous pensons que c'est due à une différence de précision pour les multiplications et divisions qui rendent différent les résultats, afin de vérifier cela nous avons fait une expérimentation avec un petit volume de données et il y avait une différence mais il était bien plus petit qu'avec le grand fichier. Par example, avec un petit fichier on peut obtenir une différence de xxx, tandis que pour les gros dataset la différence déforme jusqu'a 33320.5089 pour le meilleur pagerank calculé avec Pig, contre calculé avec Pyspark http://dbpedia.org/resource/Living_people pour le site
 
-* faire remarque pour les possibilités de changement de temps d'exécution.
-* Il faut tenir en compte que les programmers s'executent dans le contexte des cluster google dans des machines suceptibles de prendre plus de temps d'execution de leur disponibilite et utilisation, ce qui peut impacter les temps d'executions.
-
-* Recommendation exécuter plusieurs fois pour calculer un temps d'exécution moyen.
-
-* Prendre en compte l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
-
-
-* Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy, compte tenus que dans cette expérience nous avons eu recours au calcul de nombre de partition par defaut de pySpark
-* Plus facile de faire du benchmarking et modifications (e.g. calcul max) sur l'implémentation pyspark, du au fait que Pig c'est du code integré tandis que PySpark c'est sur python
-
-* Tester Pig avec des types double, long pour determiner quel type de données minimise la perte de précision
-
-* Défis rencontrés:
-* Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota, discrepence pagerank pig vs pyspark du au perte de précision
