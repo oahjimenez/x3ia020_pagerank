@@ -90,7 +90,7 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 |9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
-Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémentation Pyspark, étant donné que pour Python les données numériques float ont une [double précision par défaut](https://zetcode.com/python/decimal/#:~:text=By%20default%2C%20Python%20interprets%20any,for%20financial%20and%20monetary%20calculations.) et que pour Pig les types autres que le long,int peuvent entrainer dans des [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html). Plus de details sur ce point sont abordees dans la section finale.
+Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémentation Pyspark. On a favorisé ces résulats parce que pour Python les données numériques float ont une [double précision par défaut](https://zetcode.com/python/decimal/#:~:text=By%20default%2C%20Python%20interprets%20any,for%20financial%20and%20monetary%20calculations.) tandis que pour Pig les types autres que le long et int peuvent entrainer des [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html). Plus de détails sur ce point sont abordés dans la section finale.
 
 # 4. Conclusions et recommendations
 Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de faire une version simplifiée de PageRank en utilisant Hadoop Pig et Hadoop Spark sur l'Environnement GCP qui a rendu simple le processus de créer et gérer les clusters parcoure. On résume les principales conclusions ci-dessous:
