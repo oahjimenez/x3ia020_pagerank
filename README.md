@@ -70,7 +70,7 @@ Sur ce graphique nous pouvons constater:
 * L'implémentation PySpark c'est celle qui performe le mieux en moyen, ensuite Pig et pyspark ont un moyen de temps d'exécution très proche.
 * Pig bénefici plus de l'augmentation dans le nombre de workers, on peut apercevoir cela surtout dans l'increment de nombre de noueds de 4 a 5, ou on voit que pyspark maintient sont temps d'execution tandis que Pig continue a reduire le temps d'execution
 * pyspark avec partionnement controlé est plus performant que Pig et que sa version sans partionement, pourtant il arrive a un soeil a un nombre de workeurs donnée, ou il est ratrappé par Pig
-* A partir de 3 noeuds, Pyspark avec partionnement controle est plus performant que Pyspark Basic
+* Avec des ressources limitées (2 noeuds), Pyspark ne samble pas béneficier d'une amélioration en raison du partionnement
 * Quant a Pyspark basic, on apercoit qu'il est plus performant que Pig au debut, et ensuit entre 3 et 4 worker il est ratrappé par Pig. A partir d'un nombre de workeur donnée, dans ce cas, 5, Pig devient plus performant. 
 
 
