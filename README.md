@@ -31,7 +31,7 @@ Implementations du pagerank utilisées:
 * Implementation PySpark (copyright pascal) 
 * Implementation PySpark partition controle 
 
-Les resultats de l'execution avec les configurations cites sont presentes dans la section suivante.
+Les résultats de l'exécution avec les configurations citées sont presentés dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
 * On presente le temps d'execution pris par les deux implementations, en function de nombre de worker utilisés. Pour l'implementation pyspark, on sépare le temps d'execution sans et avec partition.
 
