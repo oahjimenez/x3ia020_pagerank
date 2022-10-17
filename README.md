@@ -75,7 +75,6 @@ Ci-après suit un diagramme de ligne illustrant la comparaison des temps d'exéc
 * Pig bénefici plus de l'augmentation dans le nombre de workers, on peut apercevoir cela surtout dans l'increment de nombre de noueds de 4 a 5, ou on voit que pyspark maintient sont temps d'execution tandis que Pig continue a reduire le temps d'execution
 
 
-
 # 3. Meilleur pagerank
 Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
@@ -96,11 +95,13 @@ Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémen
 # 4. Conclusions et recommendations
 Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de faire une version simplifiée de PageRank en utilisant Hadoop Pig et Hadoop Spark sur l'Environnement GCP qui a rendu simple le processus de créer et gérer les clusters parcoure. On résume les principales conclusions ci-dessous:
 
+* Lors de cette expérience on peut conclure que l'implementation qui a performé le mieux en moyen c'est l'implémentation pyspark avec le partitionnement controlé. Pourtant, il faut souligner qu'au bout de 5 noeuds, Pig a ratrappé en temps d'exécution, ce dernier béneficiant le plus d'une augmentation dans le nombre de workeurs, tant que pyspark attend un soeil a 4 noeuds.
+
+* Nous avons utilisé la fonction de partitionnement qui vient par défaut avec pySpark (avec le param None) et ça pourrait avoir impacté la performance de la version partitionnée de py Spark, alors qu'il pourrait exister une autre implémentation plus optimale.[Lien de doc](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy)
+
 * Il y avait des inconvenants par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution. Afin de minimiser cela, une recommendation serait d'exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le crédit ne suffit pas pour faire ce genre d'expérimentations.
 
 * Restrictions crédit, limitations par rapport au nombre de noeuds (1 planté, 6 été pas dispo, pas possible d'executer plusieur configuration de noeuds en paralelle due a la quota
-
-* Nous avons utilisé la fonction de partitionnement qui vient par défaut avec pySpark (avec le param None) et ça pourrait avoir impacté la performance de la version partitionnée de py Spark, alors qu'il pourrait exister une autre implémentation plus optimale.[Lien de doc](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy)
 
 * Nous avons constaté une différence significative de rank des pages entre pyspark et Pig et nous pensons que c'est due à une différence de précision pour les multiplications et divisions qui rendent différent les résultats, afin de vérifier cela nous avons fait une expérimentation avec un petit volume de données et il y avait une différence mais il était bien plus petit qu'avec le grand fichier. Par example, avec un petit fichier on peut obtenir une différence de xxx, tandis que pour les gros dataset la différence déforme jusqu'a 33320.5089 pour le meilleur pagerank calculé avec Pig, contre calculé avec Pyspark http://dbpedia.org/resource/Living_people pour le site
 
