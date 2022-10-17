@@ -93,16 +93,29 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 |9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
-Répondre a la question: résultats calculés avec Pig ou pyspark? résultats similaires ou différents?
+Répondre a la question: résultats calculés avec Pig ou pyspark? résultats similaires ou différents? le ptit experiance avec les petits données
 Quant a l'implementation Pig, il serait donc recommendé d'utiliser des types long pour éviter les [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html)   
 
 # 4. Conclusions et recommendations
-note: faire remarque pour les possibilités de changement de temps d'exécutio
-* Il faut tenir en compte que les programmers s'executent dans le contexte des cluster google dans des machines suceptibles de prendre plus de temps d'execution de leur disponibilite et utilisation, ce qui peut impacter les temps d'executions
-* Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy, compte tenus que dans cette expérience nous avons eu recours au calcul de nombre de partition par defaut de pySpark
+
+* Dans ce projet nous avons appris à appliquer les savoir-faire appris dans les séance de ce module afin de faire une version simplifiée de PageRank et nous avons constatés des aspects sur l'environement GCP, par exemple Il y'avait des diffirences notables de temps d'execution avec le même scripte et les mêmes données se qui peut-être à cause des ressources partagés entre plusieurs clusteurs pour diffirents clients qui peut bien avoir un impacte sur les temps d'executions, afin de traiter celà, il faut executer la même experiment plusieurs fois et calculer la moyen de chaque configuration, malheureusement le credit ne suffit pas pour faire ce genre d'experimentations.
+
+* Nous avons constaté une diffirence de rank des pages entre pySpark et Pig .....
+
+* Nous avons utilisé la fonction de partitionnement qui vient par defaut avec pySpark (avec le param None) et ça porrait avoir impacté la performance de la version partitionnée de pySpark, alors que il pourrait existé une autre implimentation plus optimale. 
+https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
+
+* faire remarque pour les possibilités de changement de temps d'exécution.
+* Il faut tenir en compte que les programmers s'executent dans le contexte des cluster google dans des machines suceptibles de prendre plus de temps d'execution de leur disponibilite et utilisation, ce qui peut impacter les temps d'executions.
+
 * Recommendation exécuter plusieurs fois pour calculer un temps d'exécution moyen.
-* Prendre en compre l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
+
+* Prendre en compte l'utilisation des ressources Google et comment ceux peuvent impacter sur les temps d'exécution
+
+
+* Recommendation pour améliorer pyspark -> raffiner la sélection de nombre de partitionneurs pour exploiter au maximum les vertus du partitionBy, compte tenus que dans cette expérience nous avons eu recours au calcul de nombre de partition par defaut de pySpark
 * Plus facile de faire du benchmarking et modifications (e.g. calcul max) sur l'implémentation pyspark, du au fait que Pig c'est du code integré tandis que PySpark c'est sur python
+
 * Tester Pig avec des types double, long pour determiner quel type de données minimise la perte de précision
 
 * Défis rencontrés:
