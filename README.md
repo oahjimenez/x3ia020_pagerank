@@ -2,7 +2,7 @@
 ### Faculté des Sciences et des Techniques - Nantes Université  
 Gestion des données distribuées à large échelle  
 **Professeur**: MOLLI Pascal  
-**Étudiants**: RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
+**Étudiants**: BA RAGAA Mohammed ali ahmed, JIMENEZ Oswaldo  
 PageRank - comparaison Pig vs PySpark. Consigne: https://madoc.univ-nantes.fr/mod/assign/view.php?id=1523335 
 
 [1. Introduction - Description de l'expérience](#1-introduction---description-de-lexpérience)  
