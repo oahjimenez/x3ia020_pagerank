@@ -65,7 +65,7 @@ Afin d'éviter les shuffles entre join, une mise en place des partition control�
 Ci-après suit un diagramme de ligne illustrant la comparaison des temps d'exécution entre les implémentations pagerank, pour chaque configuration de cluster utilisée
 <img align=center src= https://github.com/oahjimenez/x3ia020_pagerank/blob/main/comp_diag.png>
 <br/>
-
+Sur ce graphique nous pouvons constater:
 * Pig est le moins performate avec deux noeuds ce qui est le résultat d'écrire les résutlts intermediaries qui prennent du temps en plus.
 * À partir de l'observation de notre expérience nous constatons qu'en moyen pyspark performe le mieux, ensuite Pig et pyspark ont un moyen de temps d'exécution très proche.
 * Pyspark basic et partionné montre etre plus performant que Pig quand on met pas en place une amélioration externe (augmentation nombre de workeurs)
