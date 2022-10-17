@@ -98,12 +98,12 @@ Quant a l'implementation Pig, il serait donc recommendé d'utiliser des types lo
 
 # 4. Conclusions et recommendations
 
-* Dans ce projet nous avons appris à appliquer les savoir-faire appris dans les séance de ce module afin de faire une version simplifiée de PageRank et nous avons constatés des aspects sur l'environement GCP, par exemple Il y'avait des diffirences notables de temps d'execution avec le même scripte et les mêmes données se qui peut-être à cause des ressources partagés entre plusieurs clusteurs pour diffirents clients qui peut bien avoir un impacte sur les temps d'executions, afin de traiter celà, il faut executer la même experiment plusieurs fois et calculer la moyen de chaque configuration, malheureusement le credit ne suffit pas pour faire ce genre d'experimentations.
+* Ce devoir nous a permis d'appliquer les savoir-faire appris dans ce module afin de faire une version simplifiée de PageRank en utilisant Hadoop Pig et Hadoop Spark sur l'Environnement GCP qui a rendu simple le processus de créer et gérer les clusters parcoure Il y avait des inconvenants par exemple Il y avait des différences notables de temps d'exécution avec le même scripte et les mêmes données ce qui peut être à cause des ressources partagées entre plusieurs clusters pour différents clients qui peuvent bien avoir un impact sur les temps d'exécution, afin de traiter cela, il faut exécuter la même experiment plusieurs fois et calculer le moyen de chaque configuration, malheureusement le credit ne suffit pas pour faire ce genre d'expérimentations.
 
-* Nous avons constaté une diffirence de rank des pages entre pySpark et Pig .....
+* Nous avons constaté une différence significative de rank des pages entre pyspark et Pig et nous pensons que c'est due à une différence de précision pour les multiplications et divisions qui rendent différent les résultats, afin de vérifier cela nous avons fait une expérimentation avec un petit volume de données et il y avait une différence mais il était bien plus petit qu'avec le grand fichier.  
 
-* Nous avons utilisé la fonction de partitionnement qui vient par defaut avec pySpark (avec le param None) et ça porrait avoir impacté la performance de la version partitionnée de pySpark, alors que il pourrait existé une autre implimentation plus optimale. 
-https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
+* Nous avons utilisé la fonction de partitionnement qui vient par défaut avec pySpark (avec le param None) et ça pourrait avoir impacté la performance de la version partitionnée de py Spark, alors qu'il pourrait exister une autre implémentation plus optimale.[Lien de doc](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy)
+
 
 * faire remarque pour les possibilités de changement de temps d'exécution.
 * Il faut tenir en compte que les programmers s'executent dans le contexte des cluster google dans des machines suceptibles de prendre plus de temps d'execution de leur disponibilite et utilisation, ce qui peut impacter les temps d'executions.
