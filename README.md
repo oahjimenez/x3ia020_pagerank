@@ -62,9 +62,7 @@ Afin d'éviter les shuffles entre join, une mise en place des partition control�
 
 ## PIG vs PySpark Basic vs PySpark avec partionnement
 
-* Descriptions de ce qu'on peut voir dans les diagrammes, points a souligner. 
-* On appercoit une modeste amelioration par rapport a l'implementation basic pyspark, ce qui suggere qu'une meilleure configuration peut encore etre mis en place pour beneficier du partitionnement controler, ce point et abordé plus en détaille dans la section de conclusions et recommendations.
-* Bien préciser si les temps comprend aussi les temps cluster ou seulements les temps d'exec internes du programme
+* Ci-après suit un diagramme de ligne illustrant les temps d'exécutions des implémentations pagerank
 <img align=center src= https://github.com/oahjimenez/x3ia020_pagerank/blob/main/comp_diag.png>
 <br/>
 
