@@ -95,7 +95,7 @@ Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémen
 # 4. Conclusions et recommendations
 Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de faire une version simplifiée de PageRank en utilisant Hadoop Pig et Hadoop Spark sur l'Environnement GCP qui a rendu simple le processus de créer et gérer les clusters parcoure. On résume les principales conclusions ci-dessous:
 
-* L'implémentation pySpark avec le partitionnement controlé a performé le mieux en moyen. Pourtant, il faut souligner qu'au bout de 5 noeuds, Pig a ratrappé en temps d'exécution, ce dernier béneficiant le plus d'une augmentation dans le nombre de workeurs, tant que pyspark attend un soeil a 4 noeuds.
+* L'implémentation pySpark avec le partitionnement controlé c'est celle qui a performé le mieux en moyen. Pourtant, il faut souligner qu'au bout de 5 noeuds, Pig a ratrappé en temps d'exécution, ce dernier béneficiant le plus d'une augmentation dans le nombre de workeurs, tant que pyspark attend un soeil a 4 noeuds.
 
 * Nous avons utilisé la fonction de [partitionnement qui vient par défaut avec pySpark](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy) (avec le param None) et ça pourrait avoir impacté la performance de la version partitionnée de pySpark, alors qu'il pourrait exister une autre implémentation plus optimale.
 
