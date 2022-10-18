@@ -24,7 +24,7 @@ Afin de mesurer la performance d'exécution entre les implémentations Pig et Py
 * **La région**: europe-west1, défini en function de la proximité avec le bucket hebergéant les données d'entrée
 * **Dataset d'entrée**: dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), disponibles sur le bucket publique gs://public_lddm_data//page_links_en.nt.bz2
 * **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
-* **Version pyspark installé dans le cluster**: 
+* **Version PySpark installé dans le cluster**: Spark 3.1.3
 
 Implementations du pagerank utilisées:
 * Implementation Pig (copyright pascal) 
@@ -99,5 +99,5 @@ Cette étude nous a permis d'appliquer les savoir-faire appris dans ce module af
 
 3. Pour une même configuration d'exécution, nous avons constaté des différences notables en termes du temps d'exécution. Nous attribuons ce comportement aux variations dans les disponibilités et état des santés des clusters. Afin de minimiser ce bruit dans l'analyse du temps d'exécution, nous recommandons, pour chaque configuration, d'exécuter les expériences à plusieurs reprises pour ensuite présenter les résultats moyens. Les résultats présentés pour cette expérience correspondent aux **modes** des paires d'expériences, en raison des limites sur les crédits GC. **A reviser
 
-4. Finalement, nous avons constaté une différence notable des valeurs pagerank entre les implémentations Pyspark et Pig. Nous attribuons cette différence due aux pertes de précisions lors des calculs numériques. Par exemple, en expérimentant avec un volume modeste de données, la différence est négligeable, tandis que pour le plus grand dataset utilisé, la différence déforme jusqu'à 33320.50 (Pig), contre 36794.33 (Pyspark), pour le site http://dbpedia.org/resource/Living_people. Nous recommandons d'explorer les exécutions des pagerank en utilisant les types de données recommandées pour éviter une [perte de précision pour Pig](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html).
+4. Finalement, nous avons constaté une différence notable des valeurs pagerank entre les implémentations Pyspark et Pig. Nous attribuons cette différence due aux pertes de précisions lors des calculs numériques. Par exemple, en expérimentant avec un volume modeste de données, la différence est négligeable e.g. 1.4616(PySpark) contre 1.461656, tandis que pour le plus grand dataset utilisé, la différence déforme jusqu'à 33320.50 (Pig), contre 36794.33 (Pyspark), pour le site http://dbpedia.org/resource/Living_people. Nous recommandons d'explorer les exécutions des pagerank en utilisant les types de données recommandées pour éviter une [perte de précision pour Pig](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html).
 
