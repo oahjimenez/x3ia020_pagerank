@@ -91,7 +91,7 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémentation Pyspark. On a favorisé ces résulats parce que pour Python les données numériques float ont une [double précision par défaut](https://zetcode.com/python/decimal/#:~:text=By%20default%2C%20Python%20interprets%20any,for%20financial%20and%20monetary%20calculations.) tandis que pour Pig les types autres que le long et int peuvent entrainer des [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html). Plus de détails sur ce point sont abordés dans la section finale.
 
 # 4. Conclusions et recommendations
-Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de mettre en oeuvre Pig et PySpark dans l'environment distribué GCP, des outils d'haut niveau qui nous ont permis d'exécer l'algorithme PageRank dans le contexte du traitement des données massives. Or, on résume ci-dessous les principales conclusions dérivées de la comparaison :
+Cet étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de mettre en oeuvre des implémentation sur Pig et PySpark de l'algorithme PageRank sur l'environnement distribué GCP, des outils d'haut niveau permettant le traitement des données massives. Or, on résume ci-dessous les principales conclusions dérivées de la comparaison :
 
 * L'implémentation pySpark avec le partitionnement controlé c'est celle qui a performé le mieux en moyen. Néanmoins, il faut souligner qu'au bout de 5 noeuds, Pig a ratrappé en temps d'exécution, ce dernier béneficiant le plus d'une augmentation dans le nombre de workeurs, tant que pyspark attend un soeil a 4 noeuds.
 
