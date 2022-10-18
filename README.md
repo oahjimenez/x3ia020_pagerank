@@ -20,7 +20,7 @@ Ci-apres on enumére les configurations et considérations tenus en compte lors 
 ## 1.1 Configurations utilisées
 Afin de mesurer la performance d'exécution entre les implémentations Pig et Pyspark, nous avons eu recours au service d'exécution de tâches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les considerations et configurations utilisées pour réaliser cette expérience se résument ci-après:
 * **Paramètres pagerank**: le nombre d'iterations a été fixé à 3, et le facteur pagerank utilisé de {d = 0.85}, pour les deux implementations. 
-* **Nombres de workers**: 2, 3, 4 et 5. Le nombre de noeuds a été choisit en function de la configuration permis dedans la quota.
+* **Nombres de workers**: 2, 3, 4 et 5. Le nombre de noeuds a été choisit en function de la configuration permis dedans le quota.
 * **La région**: europe-west1, défini en function de la proximité avec le bucket hebergéant les données d'entrée
 * **Dataset d'entrée**: dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), disponibles sur le bucket publique gs://public_lddm_data//page_links_en.nt.bz2
 * **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
