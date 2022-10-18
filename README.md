@@ -63,6 +63,7 @@ Afin d'éviter les shuffles entre join, une mise en place des partitions contrô
 ## PIG vs PySpark Basic vs PySpark avec partionnement
 
 Ci-après suit un diagramme de ligne illustrant la comparaison des temps d'exécution entre les implémentations pagerank, pour chaque configuration de cluster utilisée
+<br/>
 <img align=center src= https://github.com/oahjimenez/x3ia020_pagerank/blob/main/comp_diag.png>
 <br/>
 Sur ce graphique nous pouvons constater les points suivants:
