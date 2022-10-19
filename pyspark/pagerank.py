@@ -83,7 +83,7 @@ if __name__ == "__main__":
     ranks = links.map(lambda url_neighbors: (url_neighbors[0], 1.0))
 
     if (partition):
-        links = links.partitionBy(numPartitions = None) #using default portable hash and default number of partitions
+        links = links.partitionBy(numPartitions = None) #using default portable hash on key and default number of partitions
         ranks = ranks.partitionBy(numPartitions = None) #https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
 
     # Calculates and updates URL ranks continuously using PageRank algorithm.
