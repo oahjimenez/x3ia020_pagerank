@@ -27,9 +27,12 @@ Afin de mesurer la performance d'exécution entre les implémentations Pig et Py
 * **Version PySpark installé dans le cluster**: Spark 3.1.3
 
 Implementations du pagerank utilisées:
-* Implementation Pig (copyright pascal) 
-* Implementation PySpark (copyright pascal) 
-* Implementation PySpark partition controle 
+* Implementation Pig
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py
+* Implementation PySpark
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank-partition.py
+Due credits to Pascal MOLLI original code:
+https://github.com/momo54/large_scale_data_management
 
 Les résultats de l'exécution avec les configurations citées sont presentés dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
