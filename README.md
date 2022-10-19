@@ -63,7 +63,7 @@ Ci-dessous on présente les résultats issus des exécutions pageranks en utilis
 | 5 | 35 min 04 sec | 9d52c020836c41cba2c50e3da3de29e7 |
 
 ## PySpark avec partionnement
-Afin d'éviter les shuffles entre join, une mise en place des partitions contrôlées a été rajouté au script pyspark. [Le nombre de partitions et la function de partionnement portable_hash sur la clé ont eté laissé par défaut](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy)
+Afin d'éviter les shuffles entre join, une mise en place des partitions contrôlées a été rajouté au script PySpark. [Le nombre de partitions et la function de partionnement portable_hash sur la clé ont eté laissé par défaut](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy)
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
 | ------------- | ------------- | ------------- |
 | 2 | 42 min 48 sec | 71dd624351af42128d8d321c5fc314dd |
