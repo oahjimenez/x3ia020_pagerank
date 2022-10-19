@@ -31,8 +31,8 @@ Implémentations du pagerank utilisées:
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py  
 * Implémentation PySpark
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py  
-Pascal MOLLI code source:
-https://github.com/momo54/large_scale_data_management
+* Pascal MOLLI code source:
+https://github.com/momo54/large_scale_data_management  
 
 Les résultats de l'exécution avec les configurations citées sont presentés dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
