@@ -28,9 +28,9 @@ Afin de mesurer la performance d'exécution entre les implémentations Pig et Py
 
 Implémentations du pagerank utilisées:
 * Implémentation Pig
-https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py  
 * Implémentation PySpark
-https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py  
 Pascal MOLLI code source:
 https://github.com/momo54/large_scale_data_management
 
