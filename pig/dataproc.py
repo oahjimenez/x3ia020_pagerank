@@ -42,30 +42,7 @@ STORE new_pagerank
 """
 UPDATE = Pig.compile(PIG_UPDATE)
 
-PIG_UPDATE_AND_STORE_MAX = """
--- PR(A) = (1-d) + d (PR(T1)/C(T1) + ... + PR(Tn)/C(Tn))
-previous_pagerank = 
-    LOAD '$docs_in' 
-    USING PigStorage('\t') 
-    AS ( url: chararray, pagerank: double, links:{ link: ( url: chararray ) } );
-
-outbound_pagerank =  
-    FOREACH previous_pagerank 
-    GENERATE 
-        pagerank / COUNT ( links ) AS pagerank, 
-        FLATTEN ( links ) AS to_url;
-
-new_pagerank = 
-    FOREACH 
-        ( COGROUP outbound_pagerank BY to_url, previous_pagerank BY url INNER )
-    GENERATE 
-        group AS url, 
-        ( 1 - $d ) + $d * SUM ( outbound_pagerank.pagerank ) AS pagerank, 
-        FLATTEN ( previous_pagerank.links ) AS links;
-
-STORE new_pagerank 
-    INTO '$docs_out' 
-    USING PigStorage('\t');
+PIG_STORE_MAX = """
 
 --Needed to preserve pageranks of TO_URL lost during inner co-grouping
 ranks = 
@@ -87,7 +64,7 @@ STORE max_pagerank
     USING PigStorage('\t');
 """
 ## read the last pagerank
-UPDATE_AND_STORE_MAX = Pig.compile(PIG_UPDATE_AND_STORE_MAX)
+UPDATE_AND_STORE_MAX = Pig.compile(PIG_UPDATE+PIG_STORE_MAX)
 
 gs_bucket = "gs://pagerank"
 time_tag = time.strftime("%Y%m%d-%H%M%S")
