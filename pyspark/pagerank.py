@@ -60,7 +60,7 @@ if __name__ == "__main__":
     statistics_data = {}
     start_program_timestamp = time.time()
     partition = True
-    compute_max = True
+    compute_max = False
     gs_bucket = "gs://pagerank"
 
     # Initialize the spark context.
@@ -82,12 +82,16 @@ if __name__ == "__main__":
     # Loads all URLs with other URL(s) link to from input file and initialize ranks of them to one.
     ranks = links.map(lambda url_neighbors: (url_neighbors[0], 1.0))
 
+    #using default portable hash on key and default number of partitions
+    #https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
     if (partition):
-        links = links.partitionBy(numPartitions = None) #using default portable hash on key and default number of partitions
-        ranks = ranks.partitionBy(numPartitions = None) #https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
+        links = links.partitionBy(numPartitions = None)
 
     # Calculates and updates URL ranks continuously using PageRank algorithm.
     for iteration in range(int(sys.argv[2])):
+        if (partition):
+            ranks = ranks.partitionBy(numPartitions = None)
+
         # Calculates URL contributions to the rank of other URLs.
         contribs = links.join(ranks).flatMap(lambda url_urls_rank: computeContribs(
             url_urls_rank[1][0], url_urls_rank[1][1]  # type: ignore[arg-type]
