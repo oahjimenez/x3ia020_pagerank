@@ -98,7 +98,7 @@ Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagera
 |9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
-Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémentation Pyspark. Des résultats équivalents son obtenus avec Pig, a condition de rajouter la clause INIT On a favorisé ces résulats parce que pour Python les données numériques float ont une [double précision par défaut](https://zetcode.com/python/decimal/#:~:text=By%20default%2C%20Python%20interprets%20any,for%20financial%20and%20monetary%20calculations.) tandis que pour Pig les types autres que le long et int peuvent entrainer des [pertes de précisions](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html). Plus de détails sur ce point sont abordés dans la section finale.
+Ces valeurs exactes de pagerank correspondent au résultats issus de l'implémentation Pyspark. Des résultats équivalents son obtenus avec Pig, [à condition de rajouter la clause DISTINCT dans la méthode INIT et de calculer les pageranks sur le jeu de données **to_url** avant le dernier cogroup.](#12-modifications-aux-sources-originales)
 
 # 4. Conclusions et recommendations
 Cette étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de mettre en oeuvre et comparer les implémentations Pig et PySpark de l'algorithme PageRank, dans le contexte du traitement des données massives sur l'environnement distribué GCP. On résume ci-dessous les principales conclusions dérivées de cette expérience:
