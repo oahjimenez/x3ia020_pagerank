@@ -48,7 +48,7 @@ Ci-dessous les résultats issus des exécutions pageranks en utilisant les diff�
 ## PIG
 | Nombre de noeuds | Temps d'exécution | Temps d'exécution avec Distinct  | Dataproc Job id
 | ------------- | -------------| ------------- | ------------- |
-| 2 | 49 min 52 sec | -| 83edf25aa5e24364a1ea968a99ab415f |
+| 2 | 49 min 52 sec | 57 min 19 sec | 83edf25aa5e24364a1ea968a99ab415f |
 | 3 | 37 min 25 sec | -| 85961f8339bc43bcbaf5cf69cd13719d |
 | 4 | 34 min 34 sec | -| 6d80276d638d4d0096f0d2bbad55debc |
 | 5 | 29 min 45 sec | -| 1ad6eaf435d24191878899943ae73a15 |
