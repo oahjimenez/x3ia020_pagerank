@@ -36,11 +36,11 @@ https://github.com/momo54/large_scale_data_management
 
 ## 1.2 Modifications aux sources originales 
 **Pig**:
-* Rajoute le calcul Distinct dans la méthode INIT, afin de rendre les résultats équivalents a ceux obtenus avec PySpark
-* Pour la derniere itération et si le calcul du max pagerank est indiqué, rajoute une méthode pour le calcul des meilleurs page ranks affichant également les url voisines avant le trie issue du dernier cogroup
+* Rajout du calcul **DISTINCT** dans la méthode INIT, afin de supprimer des tuples url duplicats et de rendre les résultats équivalents à ceux obtenus avec PySpark.
+* Rajout du calcul des top pageranks, retenant les url voisines qui sont sont autrement ignorées dans la prochaine itération lors de l'application du cogroup inner.
 
 **PySpark**:
-* Applique une partitionnement aux rdds links et ranks, en utilisant la function de partition[portable_hash et calcul de nombres de partitionnements par défaut] https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
+* Applique un partitionnement aux rdds links et ranks,visant la réduction des join Shuffles et en utilisant la function de partition[portable_hash et calcul du nombre de partitionnements par défaut] https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
 
 Les résultats de l'exécution avec les configurations citées sont presentés dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
