@@ -83,7 +83,7 @@ Sur ce graphique nous pouvons constater les points suivants:
 
 Les meilleurs pagerank trouvés dans le contexte de ces exécutions sont présentés dans la section suivante.
 # 3. Meilleur pagerank
-Avec cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
+En réalisant cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
 |:1st_place_medal:| http://dbpedia.org/resource/Living_people | 36794.33146754463  |
