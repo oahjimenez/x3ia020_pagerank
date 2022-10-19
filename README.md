@@ -97,7 +97,7 @@ En réalisant cette expérience nous avons obtenu que l'entité avec le plus gra
 |9| http://dbpedia.org/resource/Canada  | 3765.46156061246 |
 |10| http://dbpedia.org/resource/Animal  | 3692.395898434714  |
 
-Ces valeurs exactes de pagerank correspondent aux résultats issus de l'implémentation Pyspark. Des résultats équivalents sont obtenus avec Pig, [à condition de rajouter la clause DISTINCT dans la méthode INIT et de calculer les pageranks sur le jeu de données **to_url** avant le dernier cogroup.](#12-modifications-aux-sources-originales)
+Ces valeurs de pagerank correspondent aux résultats issus de l'implémentation Pyspark. Des résultats équivalents sont obtenus avec Pig, [à condition de rajouter la clause DISTINCT dans la méthode INIT et de calculer les pageranks sur le jeu de données **to_url** avant le dernier cogroup.](#12-modifications-aux-sources-originales)
 
 # 4. Conclusions et recommendations
 Cette étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de mettre en oeuvre et comparer les implémentations Pig et PySpark de l'algorithme PageRank, dans le contexte du traitement des données massives sur l'environnement distribué GCP. On résume ci-dessous les principales conclusions dérivées de cette expérience:
