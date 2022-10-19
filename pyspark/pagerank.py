@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     if (partition):
         links = links.partitionBy(numPartitions = None) #using default portable hash and default number of partitions
-        ranks = ranks.partitionBy(numPartitions = None)
+        ranks = ranks.partitionBy(numPartitions = None) #https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
 
     # Calculates and updates URL ranks continuously using PageRank algorithm.
     for iteration in range(int(sys.argv[2])):
