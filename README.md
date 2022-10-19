@@ -34,6 +34,14 @@ https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py
 * Code source original, auteur Pascal MOLLI:
 https://github.com/momo54/large_scale_data_management  
 
+Modifications aux sources originales:
+Pig:
+* Rajoute le calcul Distinct dans la méthode INIT, afin de rendre les résultats équivalents a ceux obtenus avec PySpark
+* Pour la derniere itération et si le calcul du max pagerank est indiqué, rajoute une méthode pour le calcul des meilleurs page ranks affichant également les url voisines avant le trie issue du dernier cogroup
+
+PySpark:
+* Applique une partitionnement aux rdds links et ranks, en utilisant la function de partition[portable_hash et calcul de nombres de partitionnements par défaut] https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
+
 Les résultats de l'exécution avec les configurations citées sont presentés dans la section suivante.
 # 2. Exécutions pagerank - Pig vs PySpark
 Ci-dessous on présente les résultats issus des exécutions pageranks en utilisant les différentes configurations de cluster. Pour l'implementation pyspark, on distingue le temps d'exécution de l'implémentation sans et avec partitionnement contrôlé.
