@@ -74,7 +74,7 @@ Les résultats issus des exécutions pageranks en utilisant les différentes con
 
 ## PIG vs PySpark Basic vs PySpark avec partionnement
 
-Ci-après suit un diagramme de ligne illustrant la comparaison des temps d'exécution entre les implémentations pagerank, pour chaque configuration de cluster utilisée
+Ci-après suit un diagramme  à ligne brisée illustrant la comparaison des temps d'exécution entre les implémentations pagerank, pour chaque configuration de cluster utilisée
 <br/>
 <img align=center src= https://github.com/oahjimenez/x3ia020_pagerank/blob/main/comp_diag.png>
 <br/>
