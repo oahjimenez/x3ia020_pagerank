@@ -43,7 +43,7 @@ https://github.com/momo54/large_scale_data_management
 * Rajout du calcul des top pageranks, retenant les url voisines (**to_url**) qui sont autrement écartées dans la prochaine itération lors de l'application du **cogroup** inner.
 
 ### PySpark
-* Applique un **partitionnement** aux [rdds](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.html) **links** et **ranks**, visant la réduction des Shuffles entre les joins. Nous avons utilisé la function de partition[portable_hash sur les clés et le calcul du nombre de partitionnements par défaut] https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
+* Applique un **partitionnement** aux [rdds](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.html) **links** et **ranks**, visant la réduction des Shuffles entre les joins par itération. Nous avons utilisé la function de partition[portable_hash sur les clés et le calcul du nombre de partitions par défaut] https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
 
 # 2. Exécutions pagerank - Pig vs PySpark
 Ci-dessous les résultats issus des exécutions pageranks en utilisant les différentes configurations de cluster sont présentés. Pour l'implementation PySpark, on distingue le temps d'exécution de l'implémentation sans et avec partitionnement contrôlé.
