@@ -40,7 +40,7 @@ https://github.com/momo54/large_scale_data_management
 ## 1.2 Modifications aux sources originales 
 ### Pig
 * Rajout du calcul **DISTINCT** dans la méthode **INIT**, afin de supprimer des tuples url dupliquées et de rendre les résultats équivalents à ceux obtenus avec PySpark.
-* Rajout du calcul des top pageranks, retenant les url voisines qui sont autrement ignorées dans la prochaine itération lors de l'application du cogroup inner.
+* Rajout du calcul des top pageranks, retenant les url voisines (**to_url**) qui sont autrement écartées dans la prochaine itération lors de l'application du **cogroup** inner.
 
 ### PySpark
 * Applique un **partitionnement** aux rdds links et ranks, visant la réduction des Shuffles entre les joins. Nous avons utilisé la function de partition[portable_hash sur les clés et le calcul du nombre de partitionnements par défaut] https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy
