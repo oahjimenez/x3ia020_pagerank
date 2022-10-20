@@ -22,8 +22,8 @@ Afin de mesurer la performance entre les implémentations Pig et Pyspark, nous a
 * **Région du cluster**: fixé à **europe-west1**, défini en function de la proximité avec le bucket hébergeant les données d'entrée.
 * **Données d'entrée**: le dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), 
 préchargé dans le bucket public **gs://public_lddm_data//page_links_en.nt.bz2**
-* **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
-* **Version PySpark installé dans le cluster**: Spark 3.1.3
+* **Version PIG installée dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
+* **Version PySpark installée dans le cluster**: Spark 3.1.3
 
 Implémentations du pagerank utilisées:
 * Implémentation Pig  
