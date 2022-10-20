@@ -47,7 +47,7 @@ Ci-dessous les résultats issus des exécutions pageranks en utilisant les diff�
 
 ## PIG
 | Nombre de noeuds | Temps d'exécution  | Dataproc Job id
-| ------------- | -------------| ------------- | ------------- |
+| ------------- | -------------| ------------- |
 | 2 | 57 min 19 sec | 83edf25aa5e24364a1ea968a99ab415f |
 | 3 | 47 min 50 sec | 85961f8339bc43bcbaf5cf69cd13719d |
 | 4 | 38 min 8 sec | 6d80276d638d4d0096f0d2bbad55debc |
