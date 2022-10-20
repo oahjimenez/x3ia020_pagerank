@@ -26,13 +26,13 @@ préchargé dans le bucket public **gs://public_lddm_data//page_links_en.nt.bz2*
 * **Version PySpark installée dans le cluster**: Spark 3.1.3
 
 Implémentations du pagerank utilisées:
-* Implémentation **Pig**
+* Implémentation Pig
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py    
-* Commandes d'exécution **Pig**  
+* Commandes d'exécution Pig  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/run.sh  
-* Implémentation **PySpark**  
+* Implémentation PySpark  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py  
-* Commandes d'exécution **PySpark**  
+* Commandes d'exécution PySpark  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/run.sh  
 * Code source original, auteur professeur Pascal MOLLI:
 https://github.com/momo54/large_scale_data_management  
