@@ -46,7 +46,7 @@ https://github.com/momo54/large_scale_data_management
 * Applique un **partitionnement** aux [rdds](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.html) **links** et **ranks**, visant la réduction des Shuffles entre les joins par itération. Nous avons utilisé la function de partition [portable_hash sur les clés et le calcul du nombre de partitions par défaut](https://spark.apache.org/docs/latest/api/python/_modules/pyspark/rdd.html#RDD.partitionBy).
 
 # 2. Exécutions pagerank - Pig vs PySpark
-Les résultats issus des exécutions pageranks en utilisant les différentes configurations de cluster sont présentés ci-dessous. Pour l'implementation PySpark, on distingue le temps d'exécution entre l'implémentation sans et avec partitionnement contrôlé.
+Les résultats issus des exécutions pageranks en utilisant les différentes configurations de cluster sont présentés ci-dessous. Pour l'implémentation PySpark, on distingue le temps d'exécution entre l'implémentation sans et avec partitionnement contrôlé.
 
 ## PIG
 | Nombre de noeuds | Temps d'exécution  | Dataproc Job id
