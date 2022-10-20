@@ -90,7 +90,7 @@ Les meilleurs pagerank computés dans le cadre de ces exécutions sont présent�
 Nous avons obtenu que l'entité avec le meilleur pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 des uri ayant le meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
 | ---- | ------------- | ------------- |
-|:1st_place_medal:| http://dbpedia.org/resource/Living_people | 36794.33146754463  |
+|:1st_place_medal:| **http://dbpedia.org/resource/Living_people** | 36794.33146754463  |
 |:2nd_place_medal:| http://dbpedia.org/resource/United_States | 13201.340151981207  |
 |:3rd_place_medal:| http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census | 10371.162005541351  |
 |4| http://dbpedia.org/resource/List_of_sovereign_states  | 5195.34736186218  |
