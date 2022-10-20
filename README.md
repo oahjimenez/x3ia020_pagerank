@@ -16,7 +16,7 @@ Le but de cette expérience c'est de comparer les performances de l'algorithme [
 Premièrement, nous présentons les [configurations utilisées](#11-configurations-utilisées) pour réaliser cette expérience, ensuite nous comparons les [temps d'exécution](#2-exécutions-pagerank---pig-vs-pyspark) du pagerank avec des [diagrammes à ligne brisée](#2-exécutions-pagerank---pig-vs-pyspark) et nous illustrons [les meilleurs pagerank](#3-meilleur-pagerank) computés. Finalement, nous présentons les [conclusions et récomendations](#4-conclusions-et-recommendations) issues des comparaisons et le déroulement de l'expérience.
 
 ## 1.1 Configurations utilisées
-Afin de mesurer la performance entre les implémentations Pig et Pyspark, nous avons eu recours au service d'exécution de tâches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les configurations et considérations tenus en comptes pour réaliser cette expérience se enumérent ci-après:
+Afin de mesurer la performance entre les implémentations Pig et Pyspark, nous avons eu recours au service d'exécution de tâches [Dataproc](https://cloud.google.com/dataproc?hl=fr) de la suite Google cloud. Les configurations et considérations tenus en comptes pour réaliser cette expérience s'énumèrent ci-après:
 * **Paramètres pagerank**: le nombre d'iterations a été fixé à 3, et le facteur pagerank utilisé de {d = 0.85}, pour les deux implémentations. 
 * **Nombres de workers**: 2, 3, 4 et 5. Le nombre de noeuds a été déterminé en raison des restrictions du quota et la puissance minimale requis pour le fonctionnement des algorithmes.
 * **La région**: europe-west1, défini en function de la proximité avec le bucket hebergéant les données d'entrée
