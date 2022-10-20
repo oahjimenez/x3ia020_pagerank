@@ -39,7 +39,7 @@ https://github.com/momo54/large_scale_data_management
 
 ## 1.2 Modifications aux sources originales 
 ### Pig
-* Rajout du calcul **DISTINCT** dans la méthode **INIT**, afin de supprimer des tuples url duplicats et de rendre les résultats équivalents à ceux obtenus avec PySpark.
+* Rajout du calcul **DISTINCT** dans la méthode **INIT**, afin de supprimer des tuples url dupliquées et de rendre les résultats équivalents à ceux obtenus avec PySpark.
 * Rajout du calcul des top pageranks, retenant les url voisines qui sont autrement ignorées dans la prochaine itération lors de l'application du cogroup inner.
 
 ### PySpark
