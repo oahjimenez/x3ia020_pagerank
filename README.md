@@ -46,12 +46,12 @@ https://github.com/momo54/large_scale_data_management
 Ci-dessous les résultats issus des exécutions pageranks en utilisant les différentes configurations de cluster sont présentés. Pour l'implementation PySpark, on distingue le temps d'exécution de l'implémentation sans et avec partitionnement contrôlé.
 
 ## PIG
-| Nombre de noeuds | Temps d'exécution | Temps d'exécution avec Distinct  | Dataproc Job id
+| Nombre de noeuds | Temps d'exécution  | Dataproc Job id
 | ------------- | -------------| ------------- | ------------- |
-| 2 | 49 min 52 sec | 57 min 19 sec | 83edf25aa5e24364a1ea968a99ab415f |
-| 3 | 37 min 25 sec | 47 min 50 sec | 85961f8339bc43bcbaf5cf69cd13719d |
-| 4 | 34 min 34 sec | 38 min 8 sec | 6d80276d638d4d0096f0d2bbad55debc |
-| 5 | 29 min 45 sec | 35 min 27 sec | 1ad6eaf435d24191878899943ae73a15 |
+| 2 | 57 min 19 sec | 83edf25aa5e24364a1ea968a99ab415f |
+| 3 | 47 min 50 sec | 85961f8339bc43bcbaf5cf69cd13719d |
+| 4 | 38 min 8 sec | 6d80276d638d4d0096f0d2bbad55debc |
+| 5 | 35 min 27 sec | 1ad6eaf435d24191878899943ae73a15 |
 
 ## PySpark Basic
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
