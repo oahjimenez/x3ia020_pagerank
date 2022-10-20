@@ -34,7 +34,7 @@ https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/run.sh
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py  
 * Commandes d'exécution PySpark  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/run.sh  
-* Code source original, auteur Pascal MOLLI:
+* Code source original, auteur professeur Pascal MOLLI:
 https://github.com/momo54/large_scale_data_management  
 
 ## 1.2 Modifications aux sources originales 
