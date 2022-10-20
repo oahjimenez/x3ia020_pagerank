@@ -112,5 +112,5 @@ Cette étude nous a permis d'appliquer les savoir-faire appris dans ce module af
 
 3. Pour une même configuration d'exécution, nous avons constaté des différences non négligables en termes du temps d'exécution. Nous attribuons ce comportement aux variations dans les disponibilités et l'état des santé des clusters. Afin de minimiser ce bruit dans l'analyse du temps d'exécution, nous recommandons, pour chaque configuration, d'exécuter les expériences à plusieurs reprises pour ensuite présenter les résultats moyens. Les résultats présentés pour cette expérience correspondent aux **modes** des paires d'exécutions, en raison des limites sur les crédits GC.
 
-4. Nous recommandons d'explorer les types de données recommandées autres que le float pour éviter une [perte de précision pour les calculs sur Pig](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html), au but de minimiser les différences entre les valeurs pagerank de chaque implémentation.
+4. Nous recommandons d'explorer les types de données suggérés autres que le float pour éviter une [perte de précision pour les calculs sur Pig](https://www.oreilly.com/library/view/programming-pig/9781449317881/ch04.html), au but de minimiser les différences entre les valeurs pagerank de chaque implémentation.
 
