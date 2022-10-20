@@ -64,7 +64,7 @@ Les résultats issus des exécutions pageranks en utilisant les différentes con
 | 4 | 35 min 28 sec | e870244c239b47e1bf2e6c86691d4bfa |
 | 5 | 35 min 04 sec | 9d52c020836c41cba2c50e3da3de29e7 |
 
-## PySpark avec partionnement
+## PySpark avec partionnement contrôlé
 | Nombre de noeuds | Temps d'exécution | Dataproc Job id
 | ------------- | ------------- | ------------- |
 | 2 | 42 min 48 sec | 71dd624351af42128d8d321c5fc314dd |
