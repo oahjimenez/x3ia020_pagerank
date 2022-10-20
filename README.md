@@ -26,7 +26,7 @@ préchargé dans le bucket public **gs://public_lddm_data//page_links_en.nt.bz2*
 * **Version PySpark installée dans le cluster**: Spark 3.1.3
 
 Implémentations du pagerank utilisées:
-* Implémentation Pig
+* Implémentation Pig  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py    
 * Commandes d'exécution Pig  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/run.sh  
