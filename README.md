@@ -20,7 +20,7 @@ Afin de mesurer la performance entre les implémentations Pig et Pyspark, nous a
 * **Paramètres pagerank**: le nombre d'iterations a été fixé à 3, et le facteur pagerank utilisé à {d = 0.85}, pour les deux implémentations. 
 * **Nombre de noeuds**: 2, 3, 4 et 5. Le nombre de noeuds a été déterminé en raison des restrictions du quota et la puissance minimale requis pour le fonctionnement des algorithmes.
 * **Région du cluster**: fixé à **europe-west1**, défini en function de la proximité avec le bucket hébergeant les données d'entrée.
-* **Données d'entrée**: le dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), disponible sur le bucket public gs://public_lddm_data//page_links_en.nt.bz2
+* **Données d'entrée**: le dataset [page_links_en.nt.bz2](http://downloads.dbpedia.org/3.5.1/en/page_links_en.nt.bz2), disponible sur le bucket public **gs://public_lddm_data//page_links_en.nt.bz2**
 * **Version PIG installé dans le cluster**: Apache Pig version 0.18.0-SNAPSHOT
 * **Version PySpark installé dans le cluster**: Spark 3.1.3
 
