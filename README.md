@@ -85,7 +85,7 @@ Sur ce graphique nous pouvons constater les points suivants:
 * L'implémentation sur Pig rattrape l'implémentation sur PySpark Basic pour la configuration à 5 noeuds.
 * Avec des ressources limitées (2 noeuds), Pyspark ne semble pas bénéficier d'une amélioration en raison du partionnement.
 
-Les meilleurs pagerank trouvés dans le contexte de ces exécutions sont présentés dans la section suivante.
+Les meilleurs pagerank computés dans le cadre de ces exécutions sont présentés dans la section suivante.
 # 3. Meilleur pagerank
 En réalisant cette expérience nous avons obtenu que l'entité avec le plus grand pagerank c'est l'uri <http://dbpedia.org/resource/Living_people>, avec un pagerank de **36,794.33**. On présente ci-après le top 10 d'url ayant les meilleur pagerank, issue de 3 itérations de l'algorithme pagerank.
 | Rank | Url  | Pagerank |
