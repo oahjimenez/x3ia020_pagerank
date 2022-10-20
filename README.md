@@ -27,14 +27,14 @@ Afin de mesurer la performance d'exécution entre les implémentations Pig et Py
 * **Version PySpark installé dans le cluster**: Spark 3.1.3
 
 Implémentations du pagerank utilisées:
-* Implémentation Pig
-https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py  
-* Commandes d'exécution Pig
-https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/run.sh
-* Implémentation PySpark
+* Implémentation Pig  
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/dataproc.py    
+* Commandes d'exécution Pig  
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pig/run.sh  
+* Implémentation PySpark  
 https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/pagerank.py  
-* Commandes d'exécution PySpark
-https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/run.sh
+* Commandes d'exécution PySpark  
+https://github.com/oahjimenez/x3ia020_pagerank/blob/main/pyspark/run.sh  
 * Code source original, auteur Pascal MOLLI:
 https://github.com/momo54/large_scale_data_management  
 
