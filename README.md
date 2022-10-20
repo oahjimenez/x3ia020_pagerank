@@ -104,7 +104,7 @@ Nous avons obtenu que l'entité avec le meilleur pagerank c'est l'uri <http://db
 Ces valeurs de pagerank correspondent aux résultats issus de l'implémentation Pyspark. Des résultats équivalents sont obtenus avec Pig, [à condition de rajouter la clause DISTINCT dans la méthode INIT et de calculer les pageranks sur le jeu de données **to_url** avant de computer le dernier cogroup.](#12-modifications-aux-sources-originales)
 
 # 4. Conclusions et recommendations
-Cette étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de mettre en oeuvre et comparer les implémentations Pig et PySpark de l'algorithme PageRank, dans le contexte du traitement des données massives sur l'environnement distribué GCP. On résume ci-dessous les principales conclusions dérivées de cette expérience:
+Cette étude nous a permis d'appliquer les savoir-faire appris dans ce module afin de mettre en oeuvre et comparer les implémentations Pig et PySpark de l'algorithme PageRank, dans le contexte du traitement des données massives sur l'environnement distribué GCP. Nous résumons les principales conclusions dérivées de cette expérience ci-dessous:
 
 1. PySpark avec du partitionnement contrôlé  est l'implémentation qui performe le mieux en moyen. Bien que l'on esperait que les opérations des RDD dans le RAM et les optimisations en matière de partage de ressources allaient dépasser significativement l'implémentation sur Pig, pour cette expérience nous avons obtenu qu'au but de 5 noeuds, Pig a rattrapé en temps d'exécution, ce qui pourrait indiquer que les avantages offerts par les RDD et le partionnement contrôlé n'ont pas été exploités au maximum pour cette expérience.
 
